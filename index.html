@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Markup To Email</title>
+  <script src="markupToEmail.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.1/ace.js"></script>
+  <style>
+    html {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 8px;
+      background-image: linear-gradient(to bottom, #fff, #f2f2f2);
+      border-bottom: 1px solid rgb(189, 189, 189);
+    }
+
+    header > * {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .content {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      position: relative;
+    }
+
+    .column:first-child {
+      border-right: 4px solid rgb(109, 109, 109);
+    }
+
+    textarea {
+      border: none;
+      resize: none;
+      display: flex;
+      flex: 1;
+    }
+
+    #html-preview {
+      display: block;
+      /* overflow-y: scroll; */
+      background-color: white;
+      padding: 32px;
+    }
+
+    #html-output {
+      border-top: 4px solid rgb(109, 109, 109);
+    }
+
+    .ace_editor {
+      box-sizing: border-box;
+      margin: 0;
+      display: flex;
+      flex: 2;
+    }
+
+    .label {
+      z-index: 10;
+      position: absolute;
+      background-color: lightgray;
+      margin: 0;
+      padding: 2px 8px;
+      font-size: 14px;
+      font-weight: bold;
+      pointer-events: none;
+      color: #444;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .top {
+      top: 0
+    }
+
+    .bottom {
+      bottom: 0
+    }
+
+    .left {
+      left: 0
+    }
+
+    .right {
+      right: 0
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <p>Markup To Email</p>
+  </header>
+  <div class="content">
+    <div class="column">
+      <textarea id="editor"></textarea>
+      <textarea id="html-output" readonly></textarea>
+      <p class="label top right">Markup</p>
+      <p class="label bottom right">Output</p>
+    </div>
+    <div class="column">
+      <div id="html-preview"></div>
+      <p class="label top left">Preview</p>
+    </div>
+  </div>
+  <script>
+    
+    const $output = document.getElementById('html-output');
+    const $preview = document.getElementById('html-preview');
+
+    const lastMarkup = localStorage.getItem('last-markup-value');
+
+    const editor = ace.edit('editor', {
+      selectionStyle: 'text',
+      value: lastMarkup || '',
+    });
+
+    const onChange = () => {
+      const markup = editor.getValue();
+
+      localStorage.setItem('last-markup-value', markup);
+
+      markupToEmail(markup)
+      .then(html => {
+        $preview.innerHTML = html;
+        $output.value = html;
+      })
+      .catch(err => {
+        console.error(err);
+        $output.value = err;
+      });
+    };
+
+    let timerId = null;
+
+    editor.session.on('change', () => {
+      clearTimeout(timerId);
+      timerId = setTimeout(onChange, 500);
+    });
+  </script>
+</body>
+
+</html>
