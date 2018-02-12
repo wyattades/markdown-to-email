@@ -57,6 +57,9 @@ ${items.join('')}\
 
   const markupToEmail = (markup) => new Promise((resolve, reject) => {
 
+    markup = markup.trim();
+    if (markup.length === 0) return resolve('');
+
     const sections = markup
       .replace(/\r/g, '')
       .replace(/<(\/?)b>/g, (match, closer) => `<${closer}strong>`)
