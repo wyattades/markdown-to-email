@@ -80,7 +80,7 @@
       box-sizing: border-box;
       margin: 0;
       display: flex;
-      flex: 2;
+      flex: 3;
     }
 
     #menu>a {
@@ -181,15 +181,22 @@
     const EditSession = ace.require("ace/edit_session").EditSession;
     
     const sessions = [];
-    sessions.push(new EditSession(lastMarkup || ''));
 
-    for (let i = 1; i < $links.length; i++) {
-      const newSession = new EditSession('');
-      sessions.push(newSession);
-      fetch(`examples/ex${i}.txt`)
-      .then(res => res.text())
-      .then(text => newSession.setValue(text))
-      .catch(console.error);
+    for (let i = 0; i < $links.length; i++) {
+      const session = new EditSession('');
+      session.setOption('indentedSoftWrap', false);
+      session.setUseWrapMode(true);
+
+      sessions.push(session);
+      
+      if (i === 0) {
+        lastMarkup && session.setValue(lastMarkup);
+      } else {
+        fetch(`examples/ex${i}.txt`)
+        .then(res => res.text())
+        .then(text => session.setValue(text))
+        .catch(console.error);
+      }
     }
 
     let active = 0;
@@ -215,13 +222,11 @@
       $links[active].classList.remove('active');
       $links[i].classList.add('active');
       active = i;
-      if (i < sessions.length) {
-        editor.setSession(sessions[i]);
-        onChange();
-      }
+      editor.setSession(sessions[i]);
+      onChange();
     };
 
-    setActive(0);
+    setActive(active);
     for (let i = 0; i < $links.length; i++) $links[i].onclick = () => setActive(i);
 
     let timerId = null;
