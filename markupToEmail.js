@@ -11,12 +11,10 @@
 </p>`;
 
   const ender = (str, end) => {
-    let hasEnd = false;
     if (str.endsWith(end)) {
-      str = str.substr(0, str.length - end.length);
-      hasEnd = true;
+      return [ str.substr(0, str.length - end.length), true ];
     }
-    return [ str, hasEnd ];
+    return [ str, false ];
   };
 
   const addBreaks = (str) => {
@@ -63,7 +61,7 @@ ${items.join('')}\
     const sections = markup
       .replace(/\r/g, '')
       .replace(/<(\/?)b>/g, (match, closer) => `<${closer}strong>`)
-      .replace(/\[(.*?)\]\{(.*?)\}/g, (match, label, url) => {
+      .replace(/\[(.*?)\]\{(.+?)\}/g, (match, label, url) => {
         if (label.trim().length === 0) label = url;
         return $link(label, url);
       })
