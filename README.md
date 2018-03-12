@@ -1,4 +1,4 @@
-# markup-to-email
+# Markup to Email
 
 Exports a module for converting markup text to email-formatted html.
 Also, you can view the live editor [here](https://wyattades.github.com/markup-to-email)
@@ -19,7 +19,7 @@ This is some <b>Bold Text</b>!
 The main determinant for formatting is how you space your lines. Every new line matters, so be careful when you press enter.
 
 ### Headings and Paragraphs
-Every main heading is separated from the previous paragraph by 2 blank lines. Also, the very first line of the text will be a heading. Each paragraph below a heading is separated by 1 blank line. By default, all paragraphs are bullet-pointed. For example:
+Every heading is separated from any previous text by 2 blank lines, the very first line being an exception because it is a heading by default. Each paragraph below a heading is preceeded by 1 blank line and is bullet-pointed by default. For example:
 ```
 Here is a heading that will be bold
 
@@ -47,9 +47,9 @@ Will look like this:
 - Text under this new heading
 
 ### Removing Bullet Points
-Paragraphs have bullet points by default, but you can disable them by appending a minus `-` to the heading of those paragraphs. For example:
+Paragraphs have bullet points by default, but you can disable them by appending a minus `-` to their heading. For example:
 ```
-Heading-
+Here is a heading-
 
 This paragraph will not have a bullet point!
 ```
