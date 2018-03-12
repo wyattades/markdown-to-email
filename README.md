@@ -16,7 +16,7 @@ Or making bold text in a paragraph:
 This is some <b>Bold Text</b>!
 ```
 
-The main determinant for formatting is how you space your lines. Every new line matters, so be careful when you press enter.
+The main determinant for formatting is how you space your lines. Every new line matters, so be careful when you press enter!
 
 ### Headings and Paragraphs
 Every heading is separated from any previous text by 2 blank lines, the very first line being an exception because it is a heading by default. Each paragraph below a heading is preceeded by 1 blank line and is bullet-pointed by default. For example:
@@ -35,16 +35,15 @@ Text under this new heading
 ```
 Will look like this:
 
-<b>Here is a heading that will be bold</b>
-
-- Some text<br/>Some more text in the same paragraph (but on a new line).
-
-- Other text in a new paragraph (but under the same heading).
-
-
-<b>Here is another heading!</b>
-
-- Text under this new heading
+> <b>Here is a heading that will be bold</b>
+>
+> - Some text<br/>Some more text in the same paragraph (but on a new line).
+>
+> - Other text in a new paragraph (but under the same heading).
+>
+><b>Here is another heading!</b>
+>
+>- Text under this new heading
 
 ### Removing Bullet Points
 Paragraphs have bullet points by default, but you can disable them by appending a minus `-` to their heading. For example:
