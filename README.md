@@ -3,7 +3,15 @@
 Exports a module for converting markup text to email-formatted html.
 Also, you can view the live editor [here](https://wyattades.github.com/markup-to-email)
 
-## Formatting Help
+There are two modules:
+- markdownToEmail.js - Email Markdown
+- markupToEmail.js - My Custom Syntax
+
+## Formatting: Email Markdown
+
+See https://wyattades.github.com/markup-to-email, Example 1
+
+## Formatting: My Custom Syntax
 
 ### General
 
