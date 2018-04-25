@@ -5,4 +5,4 @@ Also, you can view the live editor [here](https://wyattades.github.com/markup-to
 
 ## Formatting
 
-See https://wyattades.github.com/markup-to-email, Example 1
+See https://wyattades.github.com/markup-to-email#help
