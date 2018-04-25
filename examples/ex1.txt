@@ -1,108 +1,49 @@
-Research Roundup
+# Here's a basic header. You just need to precede it with a pound symbol
 
-Ricardo Sanfelice’s proposal to the National Science Foundation’s Electrical, Communications, and Cyber Systems {ECCS) program was funded $360k over 3 years. <i>Hybrid Predictive Control for Distributed Multi-agent Systems</i> will advance the knowledge on the systematic design of algorithms that use prediction and optimization to make distributed decisions in multi-agent systems.
-[Read More]{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1710621}
+# Paragraphs
 
-Ike Nassi’s paper <i>Scaling the Computer to the Problem: Application Programming with Unlimited Memory</i> was the cover feature in the August issue of IEEE Computer Society’s Computer journal.
-[Read More]{https://www.computer.org/csdl/mags/co/2017/08/mco2017080046-abs.html}
+Paragraphs are written without anything special.
+Pretty simple.
 
+    Here is an indented parargraph
+    
+    And here's another one! Wow wow wow wow wow wow wow wow wow wow wow
+    Paragraphs work the same way as unindented lines and bullet point lines
 
-Kudos
+# Lists
 
-Phokion Kolaitis was elected a Foreign Member of [Academia Europaea]{http://www.ae-info.org} in the Informatics Section, after being nominated by Maurizio Lenzerini (University of Rome La Sapienza) and Georg Gottlob (University of Oxford). 
-[Read More]{http://www.ae-info.org/ae/Member/Kolaitis_Phokion)
+- This is a bullet point. It is a preceded by a hyphen then a space
+It can have multiple lines. or if the line is really loooooooooooooooooooooooooooooooooooong, it will wrap.
 
-Gabe Elkaim’s 2006 paper <i>Calibration of strapdown magnetometers in magnetic field domain</i> is among the top cited Aviation & Aerospace Engineering publications of 2006
-[Read More]{http://scholar.google.com/scholar_lookup?title=Calibration+of+strapdown+magnetometers+in+magnetic+field+domain&author=Demoz+Gebre-Egziabher&author=Gabriel+H+Elkaim&author=J+David+Powell&author=Bradford+W+Parkinson&year=2006&doi=10.1061/(ASCE)0893-1321(2006)19:2(87)&publisher=American+Society+of+Civil+Engineers&journal=Journal+of+Aerospace+Engineering&volume=19&issue=2&pages=87-102&hl=en}
-
-Sung-Mo Steve Kang gave a keynote talk at the University at Buffalo, SUNY, on September 30 for its celebration of the 50th anniversary of Computer Science and Engineering (CSE) Department. He also received a Distinguished Alumni Award from the CSE Department
-
-
-Student Scoop
-
-Raquel Robinson's work on adding heartrate and emotional state to a Twitch feed was picked up by New Scientist. Raquel’s advisor is Katherine Isbister. 
-[Read More]{https://www.newscientist.com/article/2144051-twitch-gamers-live-stream-their-vital-signs-to-keep-fans-hooked/}
-
-Joe Osborn and Adam Summerville's work on Mappy, a system for automatically extracting game level maps from NES carts, was picked up by Slate's Future Tense column. Michael Mateas is the advisor for Joe and Adam.
-[Read More]{http://www.slate.com/blogs/future_tense/2017/08/16/mappy_automatically_maps_nes_levels.html}
-
-Also getting attention from Slate are former EIS'ers Anne Sullivan (now an Assistant Professor at Univ. Central Florida) and Josh McCoy (now an Assistant Professor at UC Davis), whose game, <i>Loominary</i>, uses fabric color choices while weaving to move a Twine story along. It was also featured at the Smithsonian American Art Museum Arcade (SAAM Arcade).
-[Read More]{http://www.slate.com/blogs/future_tense/2017/08/15/fabric_interfaces_allow_users_to_interact_with_computers_in_new_ways.html}
+- Also, you can nest bullet points by pressing tab:
+    - Here is a nested list item!
+    - and here is
+    another item (on multiple lines)
 
 
-Inside Scoop
+- # Header's can be in a list! This is an easy way to bold an entire line.
 
-We added 4 company members to our line up of research centers: Volley joined the Data Science (D3) Research Center; Huawei and Broadcom joined the Center for Research in Storage Systems (CRSS); and Western Digital joined the Center for Research in Open Source Software (CROSS).
+    # Header's can also be indented
 
-The Baskin School of Engineering has a new graduate studies website! Kudos to the graduate advising team, Kristin Bradham and Abel Rodriguez for working together to launch the new site. This is BSOE's first Drupal 8 site. 
-[Check out the site]{https://grad.soe.ucsc.edu/}
+# Links
 
-We'll be upgrading the rest of the BSOE sites over the next several months. We're working on a process and roadmap and will invite the BSOE community to participate and provide feedback. Stay tuned! 
+Below is a link. It is in the format [Link text](link url)
+[Wow this is a link!](https://www.computer.org/csdl/mags/co/2017/08/mco2017080046-abs.html)
 
-The Hummingbird Computational Cluster has recently been upgraded to feature a new operating system, job scheduler, more nodes and faster storage. What makes Hummingbird so great? It has over 600 Intel and AMD cores linked together to crunch all types of university data.Because there are preinstalled software packages for science and engineering, faculty and students alike can use Hummingbird to compute large amounts of data without having to administer their own cluster. Hummingbird is available to anyone on campus with a Cruz ID!
+# Bold & Italic
 
-Holger Schmidt’s lab has been honored with the 2016-2017 Lab Safety Recognition Award. His group accomplished several key tasks, including attending quarterly LSR meetings, completing inspection reports, and handling hazardous waste appropriately.
+What about bolding only part of some text? Or italics?
+Just __bold like this__ or **like this**, and italic _like this_ or *like this*
 
+# Images
 
-Happenings
+Below is how you can load an image:
 
-The Institute for the Biology of Stem Cells (IBSC) hosted an open house on Sept. 26 with special guest Senator Art Torres (Ret.) board member of the California Institute for Regenerative Medicine (CIRM), California's stem cell agency. Over 80 guests attended the event to learn about the stem cell research taking place at UC Santa Cruz. 
+![here is some alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png =100x200 "Example Title")
 
-<b>Be Bold, Go Bald!</b> UCSC Genomics Institute and the Treehouse Childhood Cancer Initiative hosted the 2nd annual St. Baldrick's “Battle of the Bald” Fundraiser on Wed. Oct. 25, 1pm-4pm, by the Science & Engineering Library. 
+This image has the alt text "here is some alter text", the title "Example Title", and a size of 100 by 200 (width by height)
 
-Professor Katherine Isbister was a keynote speaker at [CHI PLAY 2017]{https://chiplay.acm.org/2017/}, the ACM SIGCHI Annual Symposium on Computer-Human Interaction in Play.
-[Read More]{https://chiplay.acm.org/2017/}
+# Disclaimer
 
-From August 14 to August 18, the statistics group held [the workshop]{https://cbms.soe.ucsc.edu} on Bayesian Modeling for Spatial and Spatio-Temporal Data. They had about 80 participants, including the instructor of the course, who delivered 10 two-hour lectures, and three invited speakers, as well 32 junior statisticians that were sponsored by an NSF funded grant.
-
-Get involved
-
-While we always send out a call for items from department chairs, department managers and staff, you can submit news items at any time. Here's how:
-<br/>mail to: news@soe.ucsc.edu
-Or fill out [this form]{https://www.soe.ucsc.edu/news-submission-form}
-
-The "Humans of BSOE" project features the students, faculty, staff and alumni of the Baskin School of Engineering. Through individual profiles, the Humans of BSOE celebrates the individuality and diversity within BSOE. Profiles are shared on BSOE and campus social media, on the primary [BSOE website]{https://www.soe.ucsc.edu/humans-of-the-bsoe}, and on various other sites such as the new Graduate Studies website.<br/>
-We invite you to nominate a student (undergraduate or graduate), alumnus/alumna, faculty member, researcher, and/or staff member by completing the [HOBSOE submission form]{https://www.soe.ucsc.edu/HOBSOE_submission_form}. 
-
-
-Bears Repeating
-
-<b>11 Faculty Members Join the Baskin School of Engineering in 2017-18</b>
-New cohort brings the faculty total to 101
-[Read More]{https://www.soe.ucsc.edu/news/2017/10/16/11-faculty-members-join-baskin-school-engineering-2017-18}
-
-<b>Baskin Fellowship Recognizes Enterprising Work of Nathan Schaefer</b>
-This year’s fellowship recipient is at the cutting edge of biomolecular engineering
-[Read More]{https://www.soe.ucsc.edu/news/2017/10/17/baskin-fellowship-recognizes-enterprising-work-nathan-schaefer}
-
-<b>Dean Alex Wolf Leads Growing Engineering School in Era of Technological Change</b>
-As he begins his second full academic year as dean, Alex Wolf discusses his first year and his plans for the future of the engineering school in a wide-ranging interview.
-[Read More]{https://www.soe.ucsc.edu/news/2017/10/18/dean-alex-wolf-leads-growing-engineering-school-era-technological-change}
-
-<b>NSF Awards $1.5 Million Grant For Data Science Research At UC Santa Cruz</b>
-A cross-disciplinary team of computer scientists, statisticians, and mathematicians is developing the theoretical foundations of the emerging field of data science.
-[Read More]{https://www.soe.ucsc.edu/news/2017/08/24/nsf-awards-15-million-grant-data-science-research-uc-santa-cruz}
-
-<b>New Mirror-Coating Technology Promises Dramatic Improvements In Telescopes</b>
-An electrical engineer teamed up with astronomers to improve telescope mirrors using thin-film technology from the electronics industry
-[Read More]{https://www.soe.ucsc.edu/news/2017/09/18/new-mirror-coating-technology-promises-dramatic-improvements-telescopes}
-
-<b>UC Santa Cruz Researchers Develop Scalable Method For Virus Detection</b>
-Powerful diagnostic tool allows simultaneous detection and differentiation of multiple pathogens and biomarkers
-[Read More]{https://www.soe.ucsc.edu/news/2017/09/27/uc-santa-cruz-researchers-develop-scalable-method-virus-detection}
-
-<b>Games and Playable Media Faculty yo Discuss Future Trends at IndieCade Festival</b>
-SceneSampler, a game from UCSC's Social Emotional Technology Lab, is an official game selection to be demonstrated at the international festival of independent games.
-[Read More]{https://www.soe.ucsc.edu/news/2017/10/02/games-and-playable-media-faculty-discuss-future-trends-indiecade-festival}
-
-<b>David Haussler & Josh Stuart were featured in an LA Times story about cancer:</b>
-[Read More]{http://www.latimes.com/science/healthy-living/la-he-hl-cancer-genetics-organ-20171012-story.html}
-
-<b>David Deamer was mentioned in a Time magazine article on DNA sequencing:</b>
-[Read More]{http://time.com/4971220/future-dna-sequencing/}
-
-<b>Phys.org covered Devin Francom’s research</b> that has created methods that can estimate the source of an atmospheric release with more accuracy than ever before. Faculty advisor Bruno Sanso considers the results to be a great example of what we can achieve through collaboration with national laboratories:
-[Read More]{https://phys.org/news/2017-08-real-world-scientists-key-atmospheric.html}
-
-<b>Ten years ago, Dr. Camilla Forsberg received a grant for two million dollars</b> to study how the HSCs in mice decided their fate. The grant came from the California Institute for Regenerative Medicine (CIRM), the California stem cell program. Not only did Dr. Forsberg’s CIRM-sponsored research bring in seven million dollars to California, but it also paid off in people power. Since starting her lab at UCSC in 2007, over 50 trainees have worked and learned there: undergraduate and graduate students, post-doctoral fellows, and other research scientists.
-[Read More]{https://www.huffingtonpost.com/entry/benefit-ten-of-71-of-the-california-stem-cell-program_us_59e61f22e4b0a741e4b35452}
+This is a customized version of markdown, headings and indented paragraphs work differently than normal markdown.
+For more documentation on normal markdown, see [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
