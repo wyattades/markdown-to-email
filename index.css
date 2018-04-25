@@ -1,0 +1,139 @@
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 8px;
+  background-image: linear-gradient(to bottom, #fff, #f2f2f2);
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+header > * {
+  margin: 0;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-basis: 0;
+  position: relative;
+}
+
+.column:not(:last-child) {
+  border-right: 4px solid rgb(109, 109, 109);
+}
+
+.column:first-child {
+  flex: 0;
+  flex-basis: 200px;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  display: flex;
+  flex: 1;
+}
+
+#html-preview {
+  display: block;
+  background-color: white;
+  padding: 32px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+#html-output {
+  border-top: 4px solid rgb(109, 109, 109);
+}
+
+.ace_editor {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex: 3;
+}
+
+#menu>a {
+  font-size: 14px;
+  padding: 8px 16px;
+  margin: 8px 0;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #EEE;
+}
+#menu>a.active {
+  background-color: lightgrey;
+}
+#menu footer {
+  font-size: 14px;
+  color: grey;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+#menu footer a {
+  color: inherit;
+}
+
+.label {
+  z-index: 10;
+  background-color: lightgray;
+  margin: 0;
+  padding: 2px 8px;
+  font-size: 14px;
+  font-weight: bold;
+  pointer-events: none;
+  color: #444;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.top {
+  position: absolute;
+  top: 0
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0
+}
+
+.left {
+  position: absolute;
+  left: 0
+}
+
+.right {
+  position: absolute;
+  right: 0
+}
+
+.error {
+  color: red;
+}
