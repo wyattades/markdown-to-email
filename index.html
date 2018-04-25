@@ -8,11 +8,6 @@
   <title>Markup To Email</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.1/ace.js"></script>
   <script src="https://rawgit.com/wyattades/markup-to-email/master/markupToEmail.js"></script>
-  <script src="https://rawgit.com/wyattades/markup-to-email/master/markdownToEmail.js"></script>  
-  <!-- For debugging:
-    <script src="markupToEmail.js"></script>
-    <script src="markdownToEmail.js"></script> 
-  -->
   <style>
     html {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -155,17 +150,9 @@
   </header>
   <div class="content">
     <div class="column" id="menu">
-      <a>My Session</a>
-      <a>Example 1</a>
-      <a>Example 2</a>
-      <a href="https://github.com/wyattades/markup-to-email/blob/master/README.md">Help &#8594;</a> 
-      <a>
-        <label>Markdown Syntax</label>
-        <select id="parserSelector" onchange="setParser(event)">
-          <option value="markdownToEmail">Markdown</option>
-          <option value="markupToEmail">Custom Simple</option>          
-        </select>
-      </a>
+      <a data-hashid="session">My Session</a>
+      <a data-hashid="help">Help</a>
+      <a data-hashid="ex1">Example</a>
       <footer class="bottom">Created by <a href="https://github.com/wyattades">Wyatt Ades</a></footer>    
     </div>
     <div class="column">
@@ -180,58 +167,55 @@
     </div>
   </div>
   <script>
-
-    let onChange;
-    let parser = window[document.getElementById('parserSelector').value];
-
-    function setParser(e) {
-      parser = window[e.target.value];
-      onChange();
-    }
-
     (() => {
       const lastMarkup = localStorage.getItem('last-markup-value');
       
       const $output = document.getElementById('html-output');
       const $preview = document.getElementById('html-preview');
-      const $links = [].slice.call(document.querySelectorAll('#menu>a'), 0, -2);
+      const $links = {};
+      document.querySelectorAll('#menu>a[data-hashid]').forEach(($link) => {
+        $links[$link.dataset.hashid] = $link;
+      });
 
       const editor = ace.edit('editor', {
         selectionStyle: 'text',
-        // theme: 'ace/theme/xcode',
       });
 
       const EditSession = ace.require('ace/edit_session').EditSession;
       
       const sessions = [];
 
-      for (let i = 0; i < $links.length; i++) {
+      for (const hashid in $links) {
         const session = new EditSession('');
         session.setOption('indentedSoftWrap', false);
         session.setUseWrapMode(true);
         session.setMode('ace/mode/markdown');
 
-        sessions.push(session);
+        sessions[hashid] = session;
         
-        if (i === 0) {
+        if (hashid === 'session') {
           lastMarkup && session.setValue(lastMarkup);
         } else {
-          fetch(`examples/ex${i}.txt`)
+          fetch(`examples/${hashid}.txt`)
           .then(res => res.text())
           .then(text => session.setValue(text))
           .catch(console.error);
         }
       }
 
-      let active = 0;
-
-      onChange = () => {
+      let hash = window.location.hash;
+      console.log('hash', hash);
+      if (hash && hash.startsWith('#')) hash = hash.substring(1);
+      let active = hash;
+      if (!(hash in $links)) active = 'session';
+      
+      const onChange = () => {
         const markup = editor.session.getValue();
 
-        if (active === 0)
+        if (active === 'session')
           localStorage.setItem('last-markup-value', markup);
 
-        parser(markup)
+        window.markupToEmail(markup)
         .then(html => {
           $preview.innerHTML = html;
           $output.value = html;
@@ -242,16 +226,23 @@
         });
       };
 
-      const setActive = (i) => {
+      const setActive = (hashid) => {
+
+        const newHash = hashid ? `#${hashid}` : '';
+        if (window.history.replaceState)
+          window.history.replaceState(null, null, newHash);
+        else
+          window.location.hash = newHash;
+
         $links[active].classList.remove('active');
-        $links[i].classList.add('active');
-        active = i;
-        editor.setSession(sessions[i]);
+        $links[hashid].classList.add('active');
+        active = hashid;
+        editor.setSession(sessions[hashid]);
         onChange();
       };
 
       setActive(active);
-      for (let i = 0; i < $links.length; i++) $links[i].onclick = () => setActive(i);
+      for (const hashid in $links) $links[hashid].onclick = () => setActive(hashid);
 
       let timerId = null;
 
@@ -259,8 +250,8 @@
         clearTimeout(timerId);
         timerId = setTimeout(onChange, 500);
       });
-    })();
 
+    })();
   </script>
 </body>
 

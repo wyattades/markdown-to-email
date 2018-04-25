@@ -1,0 +1,49 @@
+# Here's a basic header. You just need to precede it with a pound symbol
+
+# Paragraphs
+
+Paragraphs are written without anything special.
+Pretty simple.
+
+    Here is an indented parargraph
+    
+    And here's another one! Wow wow wow wow wow wow wow wow wow wow wow
+    Paragraphs work the same way as unindented lines and bullet point lines
+
+# Lists
+
+- This is a bullet point. It is a preceded by a hyphen then a space
+It can have multiple lines. or if the line is really loooooooooooooooooooooooooooooooooooong, it will wrap.
+
+- Also, you can nest bullet points by pressing tab:
+    - Here is a nested list item!
+    - and here is
+    another item (on multiple lines)
+
+
+- # Header's can be in a list! This is an easy way to bold an entire line.
+
+    # Header's can also be indented
+
+# Links
+
+Below is a link. It is in the format [Link text](link url)
+[Wow this is a link!](https://www.computer.org/csdl/mags/co/2017/08/mco2017080046-abs.html)
+
+# Bold & Italic
+
+What about bolding only part of some text? Or italics?
+Just __bold like this__ or **like this**, and italic _like this_ or *like this*
+
+# Images
+
+Below is how you can load an image:
+
+![here is some alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png =100x200 "Example Title")
+
+This image has the alt text "here is some alter text", the title "Example Title", and a size of 100 by 200 (width by height)
+
+# Disclaimer
+
+This is a customized version of markdown, headings and indented paragraphs work differently than normal markdown.
+For more documentation on normal markdown, see [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)

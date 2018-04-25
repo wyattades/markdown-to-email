@@ -1,49 +1,90 @@
-# Here's a basic header. You just need to precede it with a pound symbol
+# Research Roundup
 
-# Paragraphs
+- Dimitris Achlioptas collaborates on winning $800,000 proposal to the NSF+
+The goal of the project, Efficient High-Dimensional Integration using Error-Correcting Codes, is to develop algorithms that make integrating high-dimensional functions tractable. Primary applications of the research are in Artificial Intelligence and Machine Learning.
+[Read more](https://nsf.gov/awardsearch/showAward?AWD_ID=1733884)
 
-Paragraphs are written without anything special.
-Pretty simple.
+- Yu Zhang imagines the future in New York Academy of Sciences magazine article+
+In the article, Zhang discusses the coming revolution in smart electric power. 
+[Read the article](https://www.nyas.org/magazines/imagining-the-next-100-years/imagining-the-next-100-years-of-science-and-technology/)
 
-    Here is an indented parargraph
-    
-    And here's another one! Wow wow wow wow wow wow wow wow wow wow wow
-    Paragraphs work the same way as unindented lines and bullet point lines
+- Paper by Ike Nassi, CS Adjunct Professor, gets front cover attention+
+The paper, Revisiting Scalable Coherent Shared Memory, was published by the IEEE Computer Society. 
+[Read the magazine](http://publications.computer.org/computer-magazine/)
+[Read the pdf](https://www.tidalscale.com/hubfs/Marcom/White%20Papers/IEEE:%20Revisiting%20Coherent%20Shared%20Memory.pdf)
 
-# Lists
+# Kudos
 
-- This is a bullet point. It is a preceded by a hyphen then a space
-It can have multiple lines. or if the line is really loooooooooooooooooooooooooooooooooooong, it will wrap.
+- Raquel Prado is elected president of the International Society for Bayesian Statistics+
+The appointment was effective January 1, 2018. Congratulations Raquel! 
+[Read more](https://bayesian.org/governance/leadership)
 
-- Also, you can nest bullet points by pressing tab:
-    - Here is a nested list item!
-    - and here is
-    another item (on multiple lines)
+- Darrell Long appointed first Editor-in-Chief of the new IEEE Letters of the Computer Society+
+This is well-earned recognition of the depth and breadth of his expertise. Congratulations Darrell!
+[Read more](https://www.computer.org/web/locs)
 
+- Paper by J.J. Garcia-Luna-Aceves among top 3 at MSWIM+
+J.J.’s paper, Carrier-Sense Multiple Access with Collision Avoidance and Detection, was among the three best papers (out of 145 submitted) at the 20th ACM International Conference on Modelling, Analysis and Simulation of Wireless and Mobile Systems.
+[Read more](https://dl.acm.org/citation.cfm?id=3127551)
 
-- # Header's can be in a list! This is an easy way to bold an entire line.
+- Ricardo Sanfelice creates Cyber-physical Systems course on Coursera+
+The course, CPS: Modeling and Simulation, provides an introduction to modeling and simulation of cyber-physical systems.
+[Read more](https://www.coursera.org/learn/cyber-physical-systems-1)
 
-    # Header's can also be indented
+- Katherine Isbister’s book How Games Move Us is highlighted in Nature +
+The book landed in Nature’s “Highlights of this season’s releases.” Impressive reach. 
+[Read more](https://www.nature.com/articles/550036b)
 
-# Links
+# Student Scoop
 
-Below is a link. It is in the format [Link text](link url)
-[Wow this is a link!](https://www.computer.org/csdl/mags/co/2017/08/mco2017080046-abs.html)
+- 5 MEP students win Slug Tank competition for innovative business ideas+
+Winning pitches of these MEP students include “Frequen-sees,” an object-sensing device for blind users, and “RealTime,” a social network app that connects college students. 
+[Read more](https://cied.ucsc.edu/news-events/events/slug-tank-pitch-slam-2017.html)
 
-# Bold & Italic
+- Former PhD computer science student is recognized with Best Paper Honorable Mention+
+A paper by former PhD student Rajan Vaish received Best Paper Honorable Mention at the recent ACM Symposium on User Interface Software and Technology (UIST). The paper, Crowd Research: Open and Scalable University Laboratories, was a result of Vaish’s dissertation research with then advisor James Davis in the computer science department. The work was also featured in a news article from Stanford University, where Vaish landed a post-doctoral position after completing his PhD at UC Santa Cruz. 
+[Read the paper](http://hci.stanford.edu/publications/2017/crowdresearch/crowd-research-uist2017.pdf)
+[Read the Stanford University article](https://news.stanford.edu/2017/10/23/crowdsourced-research-gives-experience-global-participants)
 
-What about bolding only part of some text? Or italics?
-Just __bold like this__ or **like this**, and italic _like this_ or *like this*
+- Paper by PhD student Sharmistha Guha wins two competitions+
+The paper, Bayesian Regression with Undirected Network Predictors with an Application to Brain Connectome Data, was recognized by both the International Indian Statistical Society and the American Statistical Association Section on Bayesian Statistical Science. Guha is a graduate student in Applied Mathematics & Statistics.  
+[Read the paper](https://www.soe.ucsc.edu/research/technical-reports/UCSC-SOE-18-02)
 
-# Images
+- Student game “Phantom Jump” from Game Design Studio course is picked up by Steam+
+Phantom Jump was released commercially on Steam’s entertainment platform. The game is a skill-based platformer with rhythm mechanics. 
+[Read more](http://store.steampowered.com/app/701440/Phantom_Jump)
 
-Below is how you can load an image:
+- 4 Baskin Engineering graduate students take part in inaugural Graduate Pedagogy Fellows program+
+Megan Boivin (CE), Suzanne da Câmara (CS), Lin Jin (EE) and Jacob Noone Wade (AMS) are among the first 18 students to participate in this Teaching Assistant Training program from the UCSC Center for Innovations in Teaching and Learning (CITL). 
+[Read more](https://citl.ucsc.edu/programs/graduate-pedagogy-fellows.html)
 
-![here is some alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png =100x200 "Example Title")
+- The Masters of Gaming: BSOE creates the next generation of video game designers+
+UC Santa Cruz's Games and Playable Media Graduate Program is featured in this video from Waypoint.
+[Watch video](https://youtu.be/QhfgZ9jxgCg)
 
-This image has the alt text "here is some alter text", the title "Example Title", and a size of 100 by 200 (width by height)
+# Patents
 
-# Disclaimer
+- Congratulations Baskin School of Engineering patent awardees, including Matthew Guthaus, Riadul Islam, Phillip Berman, Sara O’Rourke, William Scott, Kate Mesa, Bin Yu, David Munday, Holger Schmidt, David Haussler, Joel Kubby, Xiaodong Tao, Nader Pourmand, Mark Akeson and Ed Green. 
+[Read more](https://www.soe.ucsc.edu/research/patents)
 
-This is a customized version of markdown, headings and indented paragraphs work differently than normal markdown.
-For more documentation on normal markdown, see [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+# Happenings
+
+- 3 Engineering faculty members take part in Transforming STEM Teaching program+
+Tracy Larrabee (CE), Narges Norouzi (CS) and Farid Dowla (EE) are among the first UC Santa Cruz faculty members to participate in the 2018 Transforming STEM Teaching Faculty Learning Program Cohort.
+[Read more](https://citl.ucsc.edu/programs/stem-teaching-cohort-2018.html)
+
+- UC Santa Cruz co-hosts the 2018 ECEDHA annual conference and expo+
+The Electrical and Computer Engineering Department Heads Association (ECEDHA) annual conference will be held in Monterey on March 16-20. Marco Rolandi, Chair of the Electrical Engineering department is leading the effort. 
+[Read more](http://ecedha.org/conferences/2018-ecedha-annual-conference-and-ecexpo)
+
+# Sad news
+
+I’m sorry to announce that Carol Mullane passed away in December 2017. Many of you knew Carol, who served as a BSOE graduate advisor for 15 years and retired in 2013. I would like to express my condolences to her family and former friends and colleagues in BSOE. 
+
+# More news
+
+More engineering news can be found on our [news feed](https://www.soe.ucsc.edu/news)!
+
+# Name that faculty member
+
+![Photo of faculty member](https://larrabee.soe.ucsc.edu/sites/default/files/Tracy.jpg =150x200)
